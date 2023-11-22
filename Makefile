@@ -1,5 +1,5 @@
-APP=$(shell basename $(shell git remote get-url origin))
-REGISTRY=europe-docker.pkg.dev/stately-lambda-405319/devops-kubernetes # <- gcloud artifact registry   #docker hub -> ikote
+APP=kbot
+REGISTRY=ikote
 VERSION=${shell git describe --tags --abbrev=0}-${shell git rev-parse --short HEAD}
 TARGETOS=linux
 TARGETARCH=amd64 #${shell dpkg --print-architecture}
@@ -27,5 +27,6 @@ push:
 	docker push ${REGISTRY}/${APP}:${VERSION}-${TARGETARCH}
 
 clean:
-	docker rmi ${REGISTRY}/${APP}:${VERSION}-${TARGETARCH}
 	rm -rf kbot
+	docker rmi ${REGISTRY}/${APP}:${VERSION}-${TARGETARCH}
+	
