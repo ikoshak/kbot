@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: ikote
-  #pullPolicy: IfNotPresent
+  # pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "v1.0.8-eb55881"
   arch: amd64
