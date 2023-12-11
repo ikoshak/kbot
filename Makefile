@@ -1,5 +1,5 @@
 APP := kbot
-REGISTRY := ghcr.io/ikoshak  # Github docker regstry
+REGISTRY := ghcr.io/ikoshak
 VERSION=${shell git describe --tags --abbrev=0}-${shell git rev-parse --short HEAD}
 TARGETOS=linux
 TARGETARCH=amd64 #${shell dpkg --print-architecture}
