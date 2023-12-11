@@ -11,7 +11,7 @@ lint:
 	golint
 
 test:
-	go test-v
+	go test -v
 
 #setup dependencies
 get:
