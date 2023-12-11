@@ -5,10 +5,11 @@
 replicaCount: 1
 
 image:
-  repository: ikote
+  registry: "ghcr.io"
+  repository: "ikoshak/kbot"
   pullPolicy: IfNotPresent
   #Overrides the image tag whose default is the chart appVersion.
-  tag: "v1.0.8-eb55881"
+  tag: "v1.0.10-d160e71"
   os: linux
   arch: amd64
 secret:
