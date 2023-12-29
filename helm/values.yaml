@@ -8,7 +8,7 @@ image:
   repository: "ikoshak/kbot"
   pullPolicy: IfNotPresent
   #Overrides the image tag whose default is the chart appVersion.
-  tag: "v1.0.10-cae2282"
+  tag: "v1.0.11-b2c1f07"
   os: ""
   arch: ""
 secret:
